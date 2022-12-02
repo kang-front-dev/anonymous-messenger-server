@@ -19,7 +19,7 @@ const startMongo = async () => {
   }
 };
 startMongo();
-const users = client.db().collection('users');
+const users = client.db('anon-messenger').collection('users');
 
 app.use(cors());
 app.use(express.json());
